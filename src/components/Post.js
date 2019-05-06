@@ -61,11 +61,11 @@ class Post extends Component {
 							ref={this.bodyRef}
 							type='text'
 							onChange={this.onChange}
-							row='30'
+							rows='30'
 						/>
 					</div>
 					<div className='col col-sm-6'>
-						<ReactMarkdown source={this.state.mdBody} />
+						<ReactMarkdown source={this.state.mdBody} className='markdown' />
 					</div>
 				</div>
 			</React.Fragment>
